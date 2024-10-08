@@ -3,22 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Daftar Menu Restoran LEONI</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Tentang Pengembang</h1>
-
-    <div class="about-section">
-        <img src="2.jpg" alt="Leoni Ananda Listiani" class="logo">
-        <p>Nama: Leoni Ananda Listiani</p>
-        <p>Sosial Media: <a href="https://www.instagram.com/leonianand_a/?next=%2F">Instagram</a></p>
+    <h1>Daftar Menu Restoran LEONI</h1>
+    <img src="logo leoni.jpg" alt="Logo Restoran" class="logo">
+    <div class="navigation">
+        <a href="index.html">MENU</a>
+        <a href="about.html">ABOUT</a>
     </div>
 
-    <footer>
-        &copy; Leoni Ananda Listiani 2024
-    </footer>
+    <table>
+        <thead title="Daftar Menu">
+           <tr>
+                <th title="Nama Makanan">Nama Makanan</th>
+                <th title="Harga Makanan">Harga Makanan</th>
+                <th title="Tautan Makanan">Tautan</th>
+                <th title="Gambar Makanan">Gambar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Strawberi Cake</td>
+                <td>Rp 50.000</td>
+                <td><a href="#">Lihat</a></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn9zl0suK27RCXN_KwCurVOcbTTdTerKGkdw&s" alt="Strawberi Cake" class="food-image"></td>
+            </tr>
+            <tr>
+                <td>Donat Keju</td>
+                <td>Rp 30.000</td>
+                <td><a href="#">Lihat</a></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1lh2hHtfciGE2bAxfrKU2IDl3c49qdd5YQ&s" alt="Donat Keju" class="food-image"></td>
+            </tr>
+            <tr>
+                <td>Kromboloni Cokelat</td>
+                <td>Rp 40.000</td>
+                <td><a href="#">Lihat</a></td>
+                <td><img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2023/12/04/cromboloni-2128613674.png" alt="Kromboloni Cokelat" class="food-image"></td>
+            </tr>
+        </tbody>
+    </table>
 
-</body>
-</html>
+    <form id="order-form">
+        <h2>Pesanan</h2>
+        <label><input type="checkbox" name="food" value="Strawberi Cake"> Strawberi Cake</label><br>
+        <label><input type="checkbox" name="food" value="Donat Keju"> Donat Keju</label><br>
+        <label><input type="checkbox" name="food" value="Kromboloni Cokelat"> Kromboloni Cokelat</label><br>
+        <button type="submit">Pesan</button>
+    </form>
+
+    <footer>
+        @Copyright Leoni Ananda Listiani 2024
+    </footer>
